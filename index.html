@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Tracker Diario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="img/logo.png" alt="Logo de Luminous" class="logo" />
+    </header>
+
+    <section class="mood-section">
+      <h2>¿Cómo te sientes hoy?</h2>
+      <div class="mood-buttons">
+        <button aria-label="Feliz" class="mood-icon-btn">😊</button>
+        <button aria-label="Triste" class="mood-icon-btn">😢</button>
+        <button aria-label="Duda" class="mood-icon-btn">🤔</button>
+        <button aria-label="Enfermo" class="mood-icon-btn">🤒</button>
+        <button aria-label="Enojado" class="mood-icon-btn">😠</button>
+      </div>
+    </section>
+
+    <section class="task-section">
+      <h2>Tareas del día</h2>
+      <label for="new-task">Escribe tu tarea:</label>
+      <input type="text" id="new-task" placeholder="Añadir nueva tarea...">
+      <button id="add-task-btn">➕ Añadir tarea</button>
+      <ul id="task-list"></ul>
+      <button id="mark-done-btn">✅ Marcar completadas</button>
+    </section>
+
+    <section class="reflection-section">
+      <h2>Agradecimientos del día</h2>
+      <label for="gratitude">¿Por qué te sientes agradecida hoy?</label>
+      <textarea id="gratitude" placeholder="Hoy agradezco..."></textarea>
+
+      <h2>Aprendizaje y reflexión</h2>
+      <label for="reflection">¿Qué aprendiste o reflexionaste?</label>
+      <textarea id="reflection" placeholder="Hoy aprendí / reflexioné..."></textarea>
+    </section>
+
+    <section class="extras">
+      <a href="https://codepen.io/Lunes-Montag/full/GgRVNpe" target="_blank" class="pomodoro-link">⏱️ Ir al Pomodoro</a>
+      <button onclick="window.print();">🖨️ Imprimir/Guardar PDF</button>
+    </section>
+
+    <footer>
+      <p>✨ Alejandra Bárcena & Patsy Pug</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
