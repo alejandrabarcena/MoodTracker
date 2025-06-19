@@ -1,161 +1,202 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mood Tracker Diario</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1 class="visually-hidden">Mood Tracker Diario de Alejandra Bárcena</h1>
-      <img src="https://i.postimg.cc/Y2x0LR2X/LOGO-PRINCIPAL.png" alt="Logo de Luminous" class="logo" />
-    </header>
+/* style.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fddde6, #dbeaff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
 
-    <section class="mood-section">
-      <h2>¿Cómo te sientes hoy?</h2>
-      <div class="mood-buttons">
-        <button aria-label="Feliz" class="mood-icon-btn" onclick="selectMood('😊')">😊</button>
-        <button aria-label="Triste" class="mood-icon-btn" onclick="selectMood('😢')">😢</button>
-        <button aria-label="Duda" class="mood-icon-btn" onclick="selectMood('🤔')">🤔</button>
-        <button aria-label="Enfermo" class="mood-icon-btn" onclick="selectMood('🤒')">🤒</button>
-        <button aria-label="Enojado" class="mood-icon-btn" onclick="selectMood('😠')">😠</button>
-      </div>
-    </section>
-      <!-- Agregar después del título "Tareas del día" -->
-<h2>Tareas del día</h2>
-<div class="activity-icons">
-  <div class="activity">
-    <img src="https://i.postimg.cc/qBsBw3xK/ahorrar.png" alt="Ahorro">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/7ZCpsvrR/bootcamp.png" alt="Bootcamp">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/s27bzpX9/checklist.png" alt="Checklist">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/TwcSLfnK/cita.png" alt="Cita psicológica">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/gcNQGcY5/desayuno.png" alt="Desayuno">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/mrYpJBXm/dormir-patsy.png" alt="Dormir con Patsy">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/TwQ72QXm/ducha.png" alt="Ducha">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/pdJkkkr7/ejercicio.png" alt="Ejercicio">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/kGzyDpYV/hora-comida.png" alt="Hora de comida">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/MG5b1TrJ/hora-de-dormir.png" alt="Hora de dormir">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/63QVcXD2/hora-medicinas.png" alt="Hora de medicinas">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/sX0Y0Lrn/idiomas.png" alt="Idiomas">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/QC9QLqNj/job.png" alt="Trabajo">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/GmJk1tRT/impresora.png" alt="Impresora">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/ZqwpCQCT/viaje.png" alt="Viaje">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/c6G8py5c/tiempo-lectura-y-arte.png" alt="Lectura y arte">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/L8BW5jLH/psiquiatra.png" alt="Psiquiatra">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/KY0srF0w/psicologa.png" alt="Psicóloga">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/tT7vBffT/pomodoro.png" alt="Pomodoro">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/gcCtKgKz/compras.png" alt="Compras">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/66vYTdxD/meditacion.png" alt="Meditación">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/Kzwbft06/journaling.png" alt="Journaling">
-    <input type="checkbox">
-  </div>
-  <div class="activity">
-    <img src="https://i.postimg.cc/zfwqJLXW/limpieza.png" alt="Limpieza">
-    <input type="checkbox">
-  </div>
-</div>
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-      <label for="new-task">Escribe tu tarea:</label>
-      <input type="text" id="new-task" placeholder="Añadir nueva tarea...">
-      <label for="task-date">Selecciona una fecha:</label>
-      <input type="date" id="task-date">
-      <button id="add-task-btn">➕ Añadir tarea</button>
-      <ul id="task-list"></ul>
-      <button id="mark-done-btn">✅ Marcar completadas</button>
-    </section>
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+}
 
-    <section class="reflection-section">
-      <h2>Agradecimientos del día</h2>
-      <label for="gratitude">¿Por qué te sientes agradecida hoy?</label>
-      <textarea id="gratitude" placeholder="Hoy agradezco..."></textarea>
+h1.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
 
-      <h2>Aprendizaje y reflexión</h2>
-      <label for="reflection">¿Qué aprendiste o reflexionaste?</label>
-      <textarea id="reflection" placeholder="Hoy aprendí / reflexioné..."></textarea>
-    </section>
+h2 {
+  color: #a020f0;
+  text-align: center;
+  margin-top: 30px;
+}
 
-    <section class="extras">
-      <a href="https://codepen.io/Lunes-Montag/full/KwpxzdL" target="_blank" class="pomodoro-link">⏱️ Ir al Pomodoro</a>
-      <button onclick="window.print();">🖨️ Imprimir/Guardar PDF</button>
-    </section>
+.mood-buttons, .icon-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
 
-    <footer>
-      <p>✨ Alejandra Bárcena & Patsy Pug</p>
-    </footer>
-  </div>
-  <script>
-    function selectMood(emoji) {
-      alert(`Estado de ánimo seleccionado: ${emoji}`);
-    }
-  </script>
-  <script src="script.js"></script>
-</body>
-</html>
+.mood-icon-btn {
+  font-size: 2rem;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mood-icon-btn:hover {
+  background: #ffc0f0;
+}
+
+input[type="text"], input[type="date"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #d14bd4;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #8e2aa8;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+  color: #777;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 500px;
+  justify-items: center;
+}
+
+.icon-grid label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icon-grid img {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+ul#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+ul#task-list li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.extras a, .extras button {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  background: #8e2aa8;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.extras a:hover, .extras button:hover {
+  background: #5e1b6c;
+}
+
+label[for], .label-text {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.activity-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.activity-icons .activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.activity-icons img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+/* Añadir espaciado inferior para prevenir superposición */
+body::after {
+  content: "";
+  display: block;
+  height: 100px;
+}
